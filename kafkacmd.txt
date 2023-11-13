@@ -1,6 +1,5 @@
-1 bin\windows\zookeeper-server-start.bat config\zookeeper.properties
-2 bin\windows\kafka-server-start.bat config\server.properties
-3 bin\windows\kafka-topics.bat --create --topic user-topic --bootstrap-server localhost:9092
-4 bin\windows\kafka-console-producer.bat --topic user-topic --bootstrap-server localhost:9092
-5 bin\windows\kafka-console-consumer.bat --topic location-update-topic --from-beginning --bootstrap-server localhost:9092
-
+zookeeper-server-start.bat "C:\\Devtools\\Kafka\\config\\zookeeper.properties"
+kafka-server-start.bat "C:\\Devtools\\Kafka\\config\\server.properties"
+kafka-topics.bat --create --topic user-topic --bootstrap-server localhost:9092
+kafka-console-producer.bat --topic user-topic --bootstrap-server localhost:9092
+kafka-console-consumer.bat --topic location-update-topic --from-beginning --bootstrap-server localhost:9092
