@@ -7,6 +7,6 @@ COMMANDS:
 
 zookeeper-server-start.bat "C:\\Devtools\\Kafka\\config\\zookeeper.properties"
 kafka-server-start.bat "C:\\Devtools\\Kafka\\config\\server.properties"
-kafka-topics.bat --create --topic user-topic --bootstrap-server localhost:9092
-kafka-console-producer.bat --topic user-topic --bootstrap-server localhost:9092
+kafka-topics.bat --create --topic location-update-topic --bootstrap-server localhost:9092
+kafka-console-producer.bat --topic location-update-topic --bootstrap-server localhost:9092
 kafka-console-consumer.bat --topic location-update-topic --from-beginning --bootstrap-server localhost:9092
