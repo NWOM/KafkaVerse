@@ -6,13 +6,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.TopicBuilder;
 
 @Configuration
-public class kafkaConfig {
+public class KafkaConfig {
     @Bean
-    public NewTopic topic(){
-
-
-
-
+    public NewTopic topic() {
         return TopicBuilder
                 .name(AppConstants.LOCATION_TOPIC_NAME)
                 .build();
