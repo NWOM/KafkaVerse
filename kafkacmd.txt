@@ -1,3 +1,10 @@
+INSTRUCTIONS:
+
+- Download and unzip the archive contents from kafka quickstart to C:\Devtools\Kafka\
+- Add C:\Devtools\Kafka\bin\windows to system path
+
+COMMANDS:
+
 zookeeper-server-start.bat "C:\\Devtools\\Kafka\\config\\zookeeper.properties"
 kafka-server-start.bat "C:\\Devtools\\Kafka\\config\\server.properties"
 kafka-topics.bat --create --topic user-topic --bootstrap-server localhost:9092
